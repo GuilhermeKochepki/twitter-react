@@ -1,0 +1,58 @@
+.pageTitle {
+    font-size: 24px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0px;
+    margin: 0 0 16px;
+}
+
+.tweetContainer {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 16px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: end;
+    align-items: center;
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.postButton {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.postButton:hover {
+    opacity: 0.875;
+}
+
+.tweetList {
+    list-style-type: none;
+    margin: 32px 0;
+    padding: 0;
+}
+
+.tweetListItem {
+    margin: 0;
+    padding: 16px 0;
+}
+
+.tweetListItem:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+}
